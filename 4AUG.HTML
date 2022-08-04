@@ -1,0 +1,40 @@
+<!DOCTYPE html> 
+<html>
+    <head>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+        <script>
+            $(document).ready(function(){
+  $("button").click(function(){
+    $("#div1").fadeToggle(1000);
+    $("#div2").fadeToggle(2000);
+    $("#div3").fadeToggle(3000);
+  });
+});
+    </script>
+    <style>
+        #div1{
+            margin: auto;
+        }
+        #div2{
+            margin: auto;
+        }
+        #div3{
+            margin: auto;
+        }
+    </style>
+    </head>
+    <body align="center">
+        <p>click here</p> 
+        <button id="btnfadein">fadein</button>
+       <button id="btnfadeout">fadeout</button>
+       <button id="btnfadetoggle">fadeToggle</button>
+       <br></br>
+
+<div id="div1" style="width:80px;height:80px;background-color:yellow;"></div>
+<br>
+<div id="div2" style="width:80px;height:80px;background-color:blue;"></div>
+<br>
+<div id="div3" style="width:80px;height:80px;background-color:red;"></div>
+
+</body>
+</html>
